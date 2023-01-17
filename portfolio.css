@@ -1,41 +1,40 @@
 body{
-    background-color: rgb(2, 0, 12);
+    background-color: #02000c;
     color: white;
     text-align: center;
     font-family: 'Poppins';
-    margin: auto;
+    box-sizing: border-box;
     width: auto;
     height: auto;
 }
-@media screen and (max-width: 600px) {
-    body{
-        width: 100%;
-        float: none;
-    }
-}
+
 header{
+    width: 90%;
     height: 20%;
-    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 section{
-    /* border: 1px solid white; */
-    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
 }
 .portfolio{
-    width: 15%;
+    width: 20%;
     height: 100%;
-    font-size: 1.750em;
+    font-size: 1.50em;
     font-weight: bold;
     text-align: start;
 }
 
 #link{
-    font-size: 1em;
+    font-size: 0.8em;
     width: 50%;
-    height: 100%;
+    height: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -56,40 +55,51 @@ a#orange{
     color: #ff9900;
 }
 #lookup{
-    border: 2px solid #ff9900;
-    border-radius: 15px;
     width: 15%;
+    height: 35px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
+}
+#lookup i{
+    display: none;
 }
 #search{
     width: 75%;
     height: 100%;
     border: none;
+    border: 2px solid #ff9900;
     border-radius: 10px;
-    font-size: 1em;
+    font-size: 0.75em;
     background-color: white;
     color: #02000c;
     text-align: start;
-    float: left;
+    /* float: left; */
 }
+
 #section1{
-    height: 50%;
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+}
+#picture{
+    width: 40%;
+    margin-left: 40px;
+    float: left;
 }
 #intro{
     font-weight: bolder;
     height: 100%;
-    width: 50%;
-    
+    width: 100%;
+    margin-top: 70px;
 }
 
 .link2{
     border: 2px solid #ff9900;
     border-radius: 15px;
-    width: 40%;
+    width: 50%;
     height: 40px;
     margin: auto;
     display: flex;
@@ -116,13 +126,17 @@ a.hire:hover{
     background-color: #333333;
 }
 #about{
-    width: 100%;
+    width: 50%;
     height: 50%;
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 20px;
     font-weight: lighter;
     text-align: center;
-    margin: 5px 0;
+    margin: auto;
+}
+#tools{
+    width: 600px;
+    margin: auto;
 }
 .box{
     width: 100%;
@@ -138,8 +152,9 @@ a.hire:hover{
 }
 #projects{
     margin-top: 30px;
-    width: 100%;
-    height: 50%;
+    width: 80%;
+    margin: auto;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -147,20 +162,18 @@ a.hire:hover{
 .sample{
     border-radius: 20px;
     border: 3px solid #ff9900;
-    height: 370px;
-    width: 30%;
+    height: 270px;
+    width: fit-content;
     overflow: hidden;
 }
-
 #landingpage{
     border-radius: 15px;
 }
-#landingpage:hover{
-    opacity: 0.4;
-}
+
 .text{
-    height: 20%;
+    height: 80px;
     width: auto;
+    font-size: 0.75em;
     margin-top: -20px;
     padding-top: 10px;
     line-height: 15px;
@@ -172,9 +185,10 @@ a.hire:hover{
 
 #contact{
     width: auto;
-    height: 300px;
+    height: 250px;
     background-color: #ff9900;
     color: #02000c;
+    margin-top: -28px;
 }
 .icons{
     width: 150px;
@@ -203,4 +217,88 @@ footer{
     height: 70px;
     position: relative;
     font-weight: lighter;
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #f1eff3;
+        color: #02000c;
+        border: 2px solid red;
+        width: 100%;
+        margin: auto;
+        margin-right: -30px;
+        overflow-x: hidden;
+    }
+    header{
+        margin: 0;
+        font-size: 1em;
+        flex-direction: row;
+        width: 100%;
+    }
+    section{
+        width: 100%;
+        margin: 0;
+    }
+    .portfolio{
+        font-size: 1em;
+    }
+    #link{
+        font-size: 0.6em;
+    }
+    #link a p{
+        
+        display: none;
+    }
+    #link a i{
+        display: block;
+        color: #333333;
+    }
+    #lookup{
+        width: 18%;
+        height: 30px;
+        border: none;
+    }
+    #lookup i{
+        margin-top: -10px;
+        display: block;
+    }
+    form{
+        display: none;
+    }
+    #section1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 ;
+    }
+    #picture{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #intro{
+        width: 100%;
+    }
+    #tools{
+        width: 100%;
+        
+    }
+    .box{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #projects{
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+    }
+    .sample{
+        width: 70%;
+        margin: 20px auto;
+        height: 100%;
+    }
+    #landingpage{
+        width: 100%;
+    }
 }
